@@ -274,7 +274,9 @@
                 <Button onclick={() => {editVideoOpen = true}} size="icon"><Pencil></Pencil></Button>
                 <Button onclick={deleteVideo} size="icon" variant="destructive"><Trash></Trash></Button>
             {/if}
-            <Button onclick={pinVideo} size="icon"><Crown></Crown></Button>
+            {#if data.user.role == "admin"}
+                <Button onclick={pinVideo} size="icon"><Crown></Crown></Button>
+            {/if}
             </div>
         </div>
         <div>
