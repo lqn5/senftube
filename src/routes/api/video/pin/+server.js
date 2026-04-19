@@ -8,7 +8,7 @@ export async function POST({ request, locals }) {
     const { video } = await request.json();
     const id = Number(video);
 
-    if (!locals?.user?.role == "admin") {
+    if (locals?.user?.role != "admin") {
         return new Response('Unauthorized', { status: 401 });
     }
 
