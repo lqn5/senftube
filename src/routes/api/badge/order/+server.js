@@ -54,6 +54,8 @@ export async function POST({ request, locals }) {
     );
 }
 
+//\CUSTOMIZE: add badge ids: price to array
+
 const shop = {
     examplebadge: 100,
     examplebadge2: 200

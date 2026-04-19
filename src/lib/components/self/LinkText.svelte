@@ -2,7 +2,7 @@
     let { text } = $props();
 
     const pattern = /(https?:\/\/[^\s]+)|@([a-zA-Z0-9_]+)|(:[a-zA-Z0-9_]+:)/g;
-	// YOU CAN ADD EMOJIS HERE
+	//\CUSTOMIZE: add emojis here
 	// example:
 	// ":example:": {
 	//	image: "https://example.com/example.png"

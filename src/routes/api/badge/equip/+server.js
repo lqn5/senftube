@@ -67,6 +67,8 @@ export async function POST({ request, locals }) {
     }
 }
 
+//\CUSTOMIZE: add badge ids to array
+
 const validBadges = [
     "examplebadge", "examplebadge2"
 ]
