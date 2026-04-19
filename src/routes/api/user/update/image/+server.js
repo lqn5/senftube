@@ -16,6 +16,7 @@ export async function GET({ locals }) {
   const imagesHeaders = {
     Authorization: `Bearer ${CLOUDFLARE_KEY}`
   };
+  // DEFAULT PROFILE PICTURE
   if(oldImage[0].image != "9f99e3d5-a3be-444b-8247-13b53bfa4600"){
     let deleteOldImageResponse = await fetch(
       `https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ID}/images/v1/${oldImage[0].image}`,
